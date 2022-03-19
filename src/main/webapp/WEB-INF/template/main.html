@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="static/css/index_page_css.css" />
+	<body>
+		<div id="title_div">
+			<ul>
+				<li>
+					<img id="userImg" src="static/pictures/user.jpg" >
+					<ul>
+						<li th:text="${userName}"></li>
+						<li><a href="logout">退出登录</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div id="nav_div">
+			<ul>
+				<li><a href="index">首页</a></li>
+				<li><a href="books">图书管理</a></li>
+				<li><a href="students">学生管理</a></li>
+			</ul>
+		</div>
+		<div id="borrowTableDiv">
+
+			<a id="add_borrow_a" href="add_borrow">添加借阅信息</a>
+			<table id="borrowTable" cellspacing="10px" border="1">
+				<tr>
+					<th>书籍ID</th>
+					<th>书籍名称</th>
+					<th>借阅时间</th>
+					<th>借阅人</th>
+					<th>借阅人学号</th>
+					<th>归还</th>
+				</tr>
+				<tr th:each="borrow : ${bookList}">
+					<td th:text="${borrow.getId()}">我是书籍ID</td>
+					<td th:text="${borrow.getBookName()}">我是书籍名字</td>
+					<td th:text="${borrow.getTime()}">我是借阅时间</td>
+					<td th:text="${borrow.getStuName()}">我是借阅人</td>
+					<td th:text="${borrow.getStuID()}">我是借阅人学号</td>
+					<td><a th:href="return_book+'?id='+${borrow.getId()}">归还</a></td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>

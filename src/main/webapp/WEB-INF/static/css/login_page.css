@@ -1,0 +1,69 @@
+
+#formDiv {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+#submitBtn {
+    width: 200px;
+    margin-top: 20px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+}
+
+#submitBtn:hover {
+    background-color: #61afe3;
+}
+
+#passWord {
+    width: 190px;
+    margin-top: 10px;
+    height: 35px;
+    border-width: 1px;
+    border-radius: 5px;
+
+}
+
+#userName {
+    border-width: 1px;
+    border-radius: 5px;
+    height: 35px;
+    width: 190px;
+}
+
+#userName:hover {
+    border-radius: 5px;
+    outline: none;
+    border-width: 1px;
+    border-color: #61afe3;
+}
+
+#userName:focus {
+    border-radius: 5px;
+    outline: none;
+    border-width: 1px;
+    border-color: #61afe3;
+}
+
+#passWord:hover {
+    outline: none;
+    border-color: #61afe3;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+#passWord:focus {
+    border-radius: 5px;
+    outline: none;
+    border-width: 1px;
+    border-color: #61afe3;
+}
+
+#failLoginP {
+    text-align: center;
+    color: red;
+}

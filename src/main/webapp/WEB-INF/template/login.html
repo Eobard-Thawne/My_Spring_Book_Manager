@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<link rel="stylesheet" href="static/css/login_page.css">
+</head>
+
+<body>
+	<h1 id="titleH">图书管理系统</h1>
+	<form method="post" action="doPost">
+		<div id="formDiv">
+			<label for="userName"><input id="userName" type="text" name="username" placeholder="用户名"></label><br>
+			<label for="passWord"><input id="passWord" type="password" name="password" placeholder="密码"></label><br>
+			<label><input type="checkbox" name="remember"></label><span>记住我</span><br>
+			<input id="submitBtn" type="submit" value="登录">
+		</div>
+	</form>
+</body>
+
+</html>

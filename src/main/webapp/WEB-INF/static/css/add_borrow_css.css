@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    display: inline;
+    font-size: 20px;
+}
+
+#add_borrow_div {
+    text-align: center;
+    width: 500px;
+    margin: auto;
+}
+
+#name_selection, #book_selection {
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#name_selection:focus, #book_selection:focus {
+    outline: none;
+    border: #2F9BFF 2px solid;
+
+}
+
+#selection_submit {
+    margin-top: 20px;
+    width: 300px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+}
+
+#selection_submit:hover {
+    background-color: #2F9BFF;
+    border-radius: 5px;
+}
+
+

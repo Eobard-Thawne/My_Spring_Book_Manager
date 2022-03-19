@@ -1,0 +1,67 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#title_div {
+	height: 60px;
+	background-color: #2F9BFF;
+	text-align: right;
+}
+
+#userImg {
+	border-radius: 999px;
+	margin-right: 10px;
+}
+
+#title_div ul li ul{
+	display: none;
+}
+#title_div ul li{
+	list-style: none;
+}
+#title_div ul li:hover ul{
+	display: block;
+}
+
+#title_div ul li ul {
+	position: absolute;
+	right: 10px;
+	background-color: #2F9BFF;
+	border-radius: 5px;
+	line-height: 30px;
+	width: 100px;
+}
+
+#title_div ul li ul li{
+	list-style: none;
+	text-align: center;
+	color: #FFFFFF;
+	border-bottom: 1px #008000 solid;
+}
+#title_div ul li ul li a{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+#title_div ul{
+	display: inline-block;
+}
+
+#nav_div{
+	width: 150px;
+	background-color: #2F9BFF;
+	text-align: center;
+}
+#nav_div a{
+	line-height: 50px;
+	text-decoration: none;
+	color: #fff;
+}
+
+
+#booksTable {
+	text-align: center;
+	width: 500px;
+	margin: 0 auto;
+}
